@@ -1,58 +1,63 @@
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+<img src="https://github.com/user-attachments/assets/72eee999-d4eb-4442-8957-31e4502bc391" 
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
+# 🛠️ osTicket: Prerequisites and Installation
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+> In this lab, I installed the open-source helpdesk platform osTicket on a Windows 10 virtual machine. I handled web server setup, PHP configuration, MySQL installation, and all required dependencies to get the system running smoothly on IIS.
 
-<h2>Environments and Technologies Used</h2>
+---
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
+## ⚙️ Stack & Services Used
+| Component         | Version        | Purpose                              |
+|------------------|----------------|--------------------------------------|
+| Windows 10        | Host OS         | VM Environment                       |
+| IIS               | w/ CGI Enabled | Web server for hosting osTicket      |
+| PHP               | v7.3.8         | Required for osTicket scripting      |
+| MySQL             | v5.5.62        | Backend database for ticket storage  |
+| osTicket          | v1.15.8        | Helpdesk/ticketing system            |
+| PHP Manager       | 1.5.0          | Integration with IIS                 |
+| VC++ Redist       | x86            | Dependency for PHP                   |
+| Rewrite Module    | (64-bit)       | Enables URL routing for osTicket     |
 
-<h2>Operating Systems Used </h2>
+---
 
-- Windows 10</b> (21H2)
+## 🧩 Step-by-Step Breakdown
 
-<h2>List of Prerequisites</h2>
+🔹 **Environment Setup**
+- Deployed Windows 10 VM and connected via RDP
+- Created “osTicket-Installation-Files” folder and extracted resources
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+🔹 **IIS & PHP Configuration**
+- Enabled CGI support in IIS
+- Installed PHP Manager and Rewrite Module
+- Created `C:\PHP` directory and extracted PHP binaries
+- Registered `php-cgi.exe` in IIS via PHP Manager
 
-<img width="412" alt="image" src="https://github.com/user-attachments/assets/0c7ab7f5-340e-446a-95aa-2db3f328956e" />
+🔹 **MySQL Database Setup**
+- Installed MySQL 5.5 with root user: `root/root`
+- Verified installation and access via configuration wizard
+
+🔹 **osTicket Deployment**
+- Unzipped osTicket to `C:\inetpub\wwwroot\`
+- Renamed upload folder to `osTicket`
+- Reloaded IIS and accessed setup through browser (localhost)
+
+---
+
+## 📸 Screenshots *(Add your visual proof here)*  
+> PHP in IIS Manager, folder structure, osTicket setup page, MySQL config wizard, etc.
+
+---
+
+## 💡 Lessons Learned
+✅ A successful deployment requires precise dependency versions (especially PHP)  
+✅ IIS must be configured with proper extensions and routing modules  
+✅ Testing each component individually (PHP, MySQL, IIS) avoids setup issues later  
+✅ Understanding the backend stack builds confidence when deploying real-world platforms  
+
+---
 
 
-<h2>Installation Steps</h2>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
