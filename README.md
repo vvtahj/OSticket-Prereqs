@@ -50,6 +50,17 @@
 ## 📸 Screenshots *(Add your visual proof here)*  
 > PHP in IIS Manager, folder structure, osTicket setup page, MySQL config wizard, etc.
 
+
+https://github.com/user-attachments/assets/1e43033a-6a1a-4508-ba35-255519d8ed22
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/46410c93-4b58-4f21-8d93-fce53267cb1a" width="850"/>
+</p>
+
+<img src="https://github.com/user-attachments/assets/33caf0a5-7099-4cf6-8470-a0f85af09640" width="500" height="450"/>
+<img src="https://github.com/user-attachments/assets/9fdb430c-532a-445a-8eed-a48d2cfcd548" width="500" height="450"/>
+
+
 ---
 
 ## 💡 Lessons Learned
